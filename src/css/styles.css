@@ -25,6 +25,12 @@
   line-height: 150%;
   letter-spacing: 0.04em;
   color: #808080;
+  outline: none;
+}
+
+.input:hover,
+input:focus {
+  border: 1px solid #4e75ff;
 }
 
 .btn {
@@ -40,9 +46,13 @@
   line-height: 150%;
 }
 
+.btn:hover,
+btn:focus {
+  background-color: #6c8cff;
+}
+
 .ul-wrapper {
   max-width: 1150px;
-
   margin: 0 auto;
 }
 
@@ -77,12 +87,23 @@ img {
 .value {
   font-weight: bold;
   text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }
 
 .text {
   display: flex;
   flex-direction: column;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }
 
 .div-loader {
@@ -102,6 +123,7 @@ img {
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
 }
+
 .loader::after {
   content: '';
   box-sizing: border-box;
@@ -114,6 +136,7 @@ img {
   border-bottom: 4px solid #ff3d00;
   border-left: 4px solid transparent;
 }
+
 @keyframes rotation {
   0% {
     transform: rotate(0deg);
